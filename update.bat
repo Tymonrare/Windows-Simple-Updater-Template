@@ -5,4 +5,6 @@ set sevzipPath="C:\Program Files\7-Zip\7z.exe"
 cscript /nologo update.js %download% ./%saveAs%_tmp
 move /Y %saveAs%_tmp %saveAs%
 
-%sevzipPath% x %saveAs%
+%sevzipPath% x %saveAs% -aoa
+
+del %saveAs%
